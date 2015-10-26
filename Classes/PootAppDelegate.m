@@ -13,6 +13,7 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
+    self.window.frame = [UIScreen mainScreen].bounds;
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 }
